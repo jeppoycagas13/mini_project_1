@@ -110,3 +110,13 @@ body {
 .footer-small {
     font-size: 14px;
 }
+.footer-container li{
+    font-size: 1em;
+}
+.footer-container h5{
+    font-size: 2.5em;
+}
+.footer-container a:hover{
+    text-decoration: underline;
+    color: lightgray;
+}

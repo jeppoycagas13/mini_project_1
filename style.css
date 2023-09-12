@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -7,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; */
 }
+
 .navbar {
     background-color: #343a40;
 }
@@ -16,14 +18,6 @@ body {
 .navbar-dark .navbar-toggler-icon {
     background-color: #ffffff;
 }
-
-.navbar .search-bar {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-}
-
 .navbar .form-inline {
     display: flex;
     justify-content: center;

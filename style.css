@@ -116,4 +116,68 @@ form{
     width: 85%;
 
 }
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
+.navbar .nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40; 
+    min-width: 100%;
+    box-shadow: none;
+    border: none;
+    border-top: 2px solid #ffffff; 
+}
+
+.navbar .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #ffffff; 
+}
+
+.navbar .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; 
+}
+.card:hover::before,
+.card:hover:after {
+  transform: scale(1);
+}
+.card:hover h5,
+.card:hover p{
+    transform:translateY(0);
+    opacity:1;
+    visibility: visible;
+}
+.card h2{
+    transition: 0.2s;
+    transform: translateY(20px);
+}
+.card p{
+    transition: 0.2s;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+}
+.card::before{
+content: " ";
+position: absolute;
+top: 0%;
+right: 0%;
+bottom: 0%;
+left: 0%;
+border-top: solid 3px;
+border-bottom: solid 3px;
+transition: 0.2s;
+transform: scaleX(0);
+}
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.2s;
+    transform: scaleY(0);
+  }

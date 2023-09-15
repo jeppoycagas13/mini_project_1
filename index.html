@@ -23,6 +23,51 @@
     width: 100%;
 
 }
+.card:hover::before,
+.card:hover:after {
+  transform: scale(1);
+}
+.card:hover h5,
+.card:hover p{
+    transform:translateY(0);
+    opacity:1;
+    visibility: visible;
+}
+.card h2{
+    transition: 0.2s;
+    transform: translateY(20px);
+}
+.card p{
+    transition: 0.2s;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+}
+.card::before{
+content: " ";
+position: absolute;
+top: 0%;
+right: 0%;
+bottom: 0%;
+left: 0%;
+border-top: solid 3px;
+border-bottom: solid 3px;
+transition: 0.2s;
+transform: scaleX(0);
+}
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    transition: 0.2s;
+    transform: scaleY(0);
+  }
+
 
 
 
@@ -44,13 +89,13 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Product
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">MEN</a>
-                    <a class="dropdown-item" href="#">WOMEN</a>
-                    <a class="dropdown-item" href="#">KIDS</a>
+                    <a class="dropdown-item" href="men.html">MEN</a>
+                    <a class="dropdown-item" href="women.html">WOMEN</a>
+                    <a class="dropdown-item" href="kid.html">KIDS</a>
                 </div>
             </li>
         </ul>
@@ -73,7 +118,7 @@
 </nav>
 
 <div class="jumbotron text-center">
-    <h1 style="color: black;">welcome to Jay Cee</h1>
+    <h1 style="color: black;">Welcome to Jay Cee</h1>
     <p style="color: black;">Shop the latest trends in fashion and more</p>
     <a class="btn btn-primary btn-lg" href="products.html" role="button">Explore Products</a>
 </div>
@@ -86,7 +131,8 @@
             <div class="card product-card">
                 <img src="kizik.jpg" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">ALDO</h5>
+                       <span> Evoke Loafers</span>
                     <p class="card-text">$50.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -95,9 +141,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 2">
+                <img src="women(2)" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">LC Waikiki</h5>
+                       <span> Square Neckline Striped Balloon Sleeve Cotton Women's Dress</span>
                     <p class="card-text">$45.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -106,9 +153,9 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 3">
+                <img src="kid(1).jpg" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">H&M</h5><span> Garment Set</span>
                     <p class="card-text">$55.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -125,7 +172,8 @@
             <div class="card product-card">
                 <img src="kizik.jpg" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">ALDO</h5>
+                       <span> Evoke Loafers</span>
                     <p class="card-text">$50.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -134,9 +182,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 2">
+                <img src="men.jpg" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">Old Navy</h5>
+                        <span>Logo Graphic T-Shirt For Men</span>
                     <p class="card-text">$45.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -145,9 +194,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 3">
+                <img src="men(2)" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">DAGİ</h5>
+                        <span>Sleepwear for Men</span>
                     <p class="card-text">$55.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -162,9 +212,10 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 1">
+                <img src="women" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">LEVI</h5>
+                        <span>Levi'S® Women'S Perfect Tee 17369-0201</span>
                     <p class="card-text">$50.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -173,9 +224,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 2">
+                <img src="women(2)" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">LC Waikiki</h5>
+                       <span> Square Neckline Striped Balloon Sleeve Cotton Women's Dress</span>
                     <p class="card-text">$45.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -184,9 +236,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 3">
+                <img src="women(3)" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">Mango</h5>
+                        <span>Cropped Shirt With Knot</span>
                     <p class="card-text">$55.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -201,9 +254,9 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 1">
+                <img src="kid(1).jpg" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">H&M</h5><span> Garment Set</span>
                     <p class="card-text">$50.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -212,9 +265,10 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 2">
+                <img src="kid.jpg" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title"> H&M</h5>
+                    <span> Super Soft Slim Fit Jeans</span>
                     <p class="card-text">$45.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
@@ -223,9 +277,9 @@
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 3">
+                <img src="kid(2).jpeg" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                    <h5 class="card-title">Kizik The Madrid Eco-Knit Slip-On Sneakers, Casual Trendy Shoes for Women and Men</h5>
+                    <h5 class="card-title">H&M</h5><span> 2-piece T-shirt and shorts set</span>
                     <p class="card-text">$55.00</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>

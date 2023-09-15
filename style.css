@@ -12,10 +12,10 @@ body {
     background-color: #343a40;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
+    color: rgb(255, 253, 253);
 }
 .navbar-dark .navbar-toggler-icon {
-    background-color: #ffffff;
+    background-color: #343a40;
 }
 .navbar .form-inline {
     display: flex;
@@ -25,18 +25,6 @@ body {
 
 .navbar .form-inline .form-group {
     margin-bottom: 0;
-}
-.jumbotron {
-    
-    background-size: cover;
-    color: #ffffff;
-    padding: 100px 0;
-}
-.jumbotron h1 {
-    font-size: 3em;
-}
-.jumbotron p {
-    font-size: 1.2em;
 }
 .product-card {
     margin-bottom: 30px;

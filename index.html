@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>E-commerce Site</title>
     <link
-      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       <script src="https://kit.fontawesome.com/a0ef0531fe.js" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+   body{
+          background-image: url('bg.jpg'); 
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
      .footer-container {
     background-color: #343a40;
     color: #ffffff;
@@ -67,7 +80,7 @@ transform: scaleX(0);
     transition: 0.2s;
     transform: scaleY(0);
   }
-
+  
 
 
 
@@ -103,7 +116,8 @@ transform: scaleX(0);
         
             <input class="form-control mr-sm-2 material-symbols-outlined" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        
+           
+           
             
         
         <ul class="navbar-nav ml-auto">
@@ -117,23 +131,30 @@ transform: scaleX(0);
     </div>
 </nav>
 
-<div class="jumbotron text-center">
-    <h1 style="color: black;">Welcome to Jay Cee</h1>
+
+
+<div style="text-align: center;">
+    <h1 style="color: black; font-family: 'Dancing Script', cursive; font-size: 5em ; margin-top: 5%;">Welcome to Jay Cee</h1>
     <p style="color: black;">Shop the latest trends in fashion and more</p>
     <a class="btn btn-primary btn-lg" href="products.html" role="button">Explore Products</a>
-</div>
+   </div>
+   
+<div>
+    
+  
+
 
 <!-- What's New -->
 <div class="container">
-    <h1 style="text-align: center;">WHAT'S NEW?</h1>
+    <h1 style="text-align: center; margin-top: 10%; ">WHAT'S NEW?</h1>
     <div class="row">
         <div class="col-md-4">
             <div class="card product-card">
                 <img src="kizik.jpg" class="card-img-top" alt="Product 1">
                 <div class="card-body">
-                    <h5 class="card-title">ALDO</h5>
-                       <span> Evoke Loafers</span>
-                    <p class="card-text">$50.00</p>
+                    <h4 class="card-title">ALDO</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Evoke Loafers</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
@@ -143,9 +164,9 @@ transform: scaleX(0);
             <div class="card product-card">
                 <img src="women(2)" class="card-img-top" alt="Product 2">
                 <div class="card-body">
-                    <h5 class="card-title">LC Waikiki</h5>
-                       <span> Square Neckline Striped Balloon Sleeve Cotton Women's Dress</span>
-                    <p class="card-text">$45.00</p>
+                    <h4 class="card-title">LC Waikiki</h4>
+                       <h5><p>$45.00</p> 
+                    <p class="card-text">Square Neckline Striped Balloon Sleeve Cotton Women's Dress</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
@@ -155,8 +176,9 @@ transform: scaleX(0);
             <div class="card product-card">
                 <img src="kid(1).jpg" class="card-img-top" alt="Product 3">
                 <div class="card-body">
-                    <h5 class="card-title">H&M</h5><span> Garment Set</span>
-                    <p class="card-text">$55.00</p>
+                    <h4 class="card-title">H&M</h4>
+                    <h5><p>$55.00</p></h5>
+                    <p class="card-text">Garment Set</p>
                     
                     <a href="#" class="btn btn-primary">Add to Cart</a>
                 </div>
@@ -168,39 +190,42 @@ transform: scaleX(0);
 <div class="container">
     <h1 style="text-align: center;">Featured for Men</h1>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="kizik.jpg" class="card-img-top" alt="Product 1">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="kizik.jpg" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">ALDO</h5>
-                       <span> Evoke Loafers</span>
-                    <p class="card-text">$50.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">ALDO</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Evoke Loafers</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="men.jpg" class="card-img-top" alt="Product 2">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="men(2)" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Old Navy</h5>
-                        <span>Logo Graphic T-Shirt For Men</span>
-                    <p class="card-text">$45.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">DAGI</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Sleepwear for men</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="men(2)" class="card-img-top" alt="Product 3">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="men.jpg" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">DAGİ</h5>
-                        <span>Sleepwear for Men</span>
-                    <p class="card-text">$55.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">OLD NAVY</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Logo Graphic T-Shirt For Men</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -210,39 +235,42 @@ transform: scaleX(0);
 <div class="container">
     <h1 style="text-align: center;">Featured for Women</h1>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="women" class="card-img-top" alt="Product 1">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="women" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">LEVI</h5>
-                        <span>Levi'S® Women'S Perfect Tee 17369-0201</span>
-                    <p class="card-text">$50.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">LEVI</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Levi'S® Women'S Perfect Tee 17369-0201</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="women(2)" class="card-img-top" alt="Product 2">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="women(2)" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">LC Waikiki</h5>
-                       <span> Square Neckline Striped Balloon Sleeve Cotton Women's Dress</span>
-                    <p class="card-text">$45.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">Lc Waikiki</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Square Neckline Striped Balloon Sleeve Cotton Women's Dress</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="women(3)" class="card-img-top" alt="Product 3">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="women(3)" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">Mango</h5>
-                        <span>Cropped Shirt With Knot</span>
-                    <p class="card-text">$55.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">MANGO</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Cropped Shirt With Knot</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -252,37 +280,42 @@ transform: scaleX(0);
 <div class="container">
     <h1 style="text-align: center;">Featured for Kids</h1>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="kid(1).jpg" class="card-img-top" alt="Product 1">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="kid(1).jpg" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">H&M</h5><span> Garment Set</span>
-                    <p class="card-text">$50.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">H&M</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Germent Set</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="kid.jpg" class="card-img-top" alt="Product 2">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="kid.jpg" alt="">
                 <div class="card-body">
-                    <h5 class="card-title"> H&M</h5>
-                    <span> Super Soft Slim Fit Jeans</span>
-                    <p class="card-text">$45.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">H&M</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">Super Soft Slim Fit Jeans</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card product-card">
-                <img src="kid(2).jpeg" class="card-img-top" alt="Product 3">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="kid(2).jpeg" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">H&M</h5><span> 2-piece T-shirt and shorts set</span>
-                    <p class="card-text">$55.00</p>
-                    
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <h4 class="card-title">H&M</h4>
+                    <h5><p>$24.99</p></h5>
+                    <p class="card-text">2-piece T-shirt and shorts set</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -337,7 +370,7 @@ transform: scaleX(0);
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
-                <p class="footer-small">All Rights Reserved &copy; 2023 Your Company</p>
+                <p class="footer-small">All Rights Reserved &copy; 2023 Jay Cee</p>
             </div>
         </div>
     </div>
@@ -347,7 +380,9 @@ transform: scaleX(0);
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
 

@@ -1,14 +1,11 @@
 
 
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    /* background-image: url('bg.jpg'); 
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+    
+    
+   
 }
 
 .navbar {
@@ -54,6 +51,7 @@ body {
 .product-card .btn {
     width: 100%;
 }
+/* footer */
 .footer {
     background-color: #343a40;
     color: #ffffff;
@@ -137,3 +135,28 @@ form{
 .navbar .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
     background-color: #007bff; 
 }
+nav .btn
+{
+    color: white;
+    border-color: white;
+}
+
+nav .btn:hover
+{
+    background-color: grey;
+    color: black;
+    border-color: grey;
+}
+
+@media screen and (max-width: 800px) {
+   
+}
+
+@media screen and (max-width: 570px) {
+   
+    
+   }
+
+
+
+

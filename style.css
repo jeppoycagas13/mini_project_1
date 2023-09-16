@@ -7,7 +7,7 @@ body {
     
    
 }
-
+/* navbar */
 .navbar {
     background-color: #343a40;
 }
@@ -26,6 +26,8 @@ body {
 .navbar .form-inline .form-group {
     margin-bottom: 0;
 }
+
+/* product card */
 .product-card {
     margin-bottom: 30px;
 }
@@ -102,6 +104,7 @@ form{
     width: 85%;
 
 }
+/* nav drop down menu */
 .navbar .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
